@@ -14,7 +14,6 @@ This repository was created as a final project for our algorithm class.
 
 You must run this in a Unix-like shell (such as Linux, macOS, or WSL).
 
-
 ### Install this repo
 
 You can clone manually and run the `ezy run` script or just run the following:
@@ -33,3 +32,10 @@ wget -qO- https://raw.githubusercontent.com/evertramos/learning-python-001/main/
 cd learning-python-001
 ./ezy run 
 ```
+
+### Requirements 
+
+You must have **docker** or **python** installed.
+
+- [Docker](https://docs.docker.com/engine/install/)
+- [Python](https://www.python.org/downloads/)
