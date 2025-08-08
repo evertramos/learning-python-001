@@ -24,6 +24,12 @@ usage_local() {
     echo "  -h, help      Show this help message"
 }
 
+# Show usage if no arguments are provided
+if [[ $# -eq 0 ]]; then
+    usage_local
+    exit 0
+fi
+
 # Process arguments
 while [[ $# -gt 0 ]]
 do
@@ -45,12 +51,12 @@ do
         shift 1
         ;;
         -h | help)
-        usage_new_site
+        usage_local
         exit 0
         ;;
         *)
-        echoerror "Unknown argument: $1" false
-        usage_new_site
+        echo "Unknown argument: $1" false
+        usage_local
         exit 0
         ;;
     esac
